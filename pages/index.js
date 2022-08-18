@@ -1,10 +1,21 @@
 import React from 'react'
 import { client } from '../lib/client';
+import {Product} from '../components'
 
 const Home = ({products}) => {
   console.log(products)
   return (
-    <div>index</div>
+    <div>
+
+    <div className="products-heading">
+      <h2>Best Seller Products</h2>
+      <p>speaker There are many variations passages</p>
+    </div>
+
+    <div className="products-container">
+      {products?.map((product) => <Product key={product._id} product={product} />)}
+    </div>
+    </div>
   )
 }
 export const getServerSideProps = async () => {

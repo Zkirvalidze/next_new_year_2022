@@ -8,3 +8,4 @@ export default createSchema({
 
   types: schemaTypes.concat([product]),
 });
+  
