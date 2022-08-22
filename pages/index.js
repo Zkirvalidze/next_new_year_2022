@@ -3,7 +3,7 @@ import { client } from '../lib/client';
 import {Product} from '../components'
 
 const Home = ({products}) => {
-  console.log(products)
+
   return (
     <div>
 
